@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Explorer</title>
+    <meta
+      name="description"
+      content="A beginner-friendly space exploration website with Earth, Moon, NASA missions, and the universe."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true" id="stars"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Space Explorer home">
+          <span class="brand-mark">✦</span>
+          <span>Space Explorer</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" href="#earth">Earth</a>
+          <a class="nav-link" href="#moon">Moon</a>
+          <a class="nav-link" href="#missions">NASA Missions</a>
+          <a class="nav-link" href="#universe">Universe</a>
+          <a class="nav-cta" href="#missions">Explore Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Discover the cosmos</p>
+            <h1>Explore the wonders of space, one mission at a time.</h1>
+            <p class="hero-text">
+              From our blue planet to distant galaxies, dive into the discoveries that help
+              us understand our home in the universe.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#missions">Start Exploring</a>
+              <a class="button secondary" href="#earth">Learn More</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat-card">
+                <strong>8</strong>
+                <span>Planets</span>
+              </div>
+              <div class="stat-card">
+                <strong>24</strong>
+                <span>Moon Landings</span>
+              </div>
+              <div class="stat-card">
+                <strong>100+</strong>
+                <span>NASA Missions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Space illustration">
+            <div class="planet-scene">
+              <div class="planet-glow"></div>
+              <div class="planet earth-planet"></div>
+              <div class="moon-orbit orbit-one">
+                <div class="moon moon-a"></div>
+              </div>
+              <div class="moon-orbit orbit-two">
+                <div class="moon moon-b"></div>
+              </div>
+              <div class="satellite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="earth" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Our home planet</p>
+            <h2>Earth</h2>
+          </div>
+
+          <div class="content-grid reveal">
+            <div class="text-panel">
+              <p>
+                Earth is the only known planet with liquid water on the surface and life as we
+                know it. It is wrapped in a protective atmosphere and surrounded by a system of
+                oceans, weather, and ecosystems.
+              </p>
+              <ul class="feature-list">
+                <li>71% of Earth is covered by water</li>
+                <li>One natural satellite: the Moon</li>
+                <li>Home to millions of species</li>
+              </ul>
+            </div>
+
+            <div class="card-stack">
+              <article class="info-card accent">
+                <span class="card-tag">Atmosphere</span>
+                <h3>Life support</h3>
+                <p>Our atmosphere protects life from harmful radiation and keeps temperatures stable.</p>
+              </article>
+              <article class="info-card">
+                <span class="card-tag">Oceans</span>
+                <h3>Blue planet</h3>
+                <p>Earth’s oceans shape climate, weather, and the incredible variety of life.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="moon" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Earth’s companion</p>
+            <h2>The Moon</h2>
+          </div>
+
+          <div class="moon-grid reveal">
+            <article class="mini-card">
+              <div class="mini-visual moon-visual"></div>
+              <h3>Surface</h3>
+              <p>Rocky, dusty, and marked with craters formed by impacts from space.</p>
+            </article>
+            <article class="mini-card">
+              <div class="mini-visual orbit-visual"></div>
+              <h3>Orbit</h3>
+              <p>The Moon travels around Earth and helps create tides on our oceans.</p>
+            </article>
+            <article class="mini-card">
+              <div class="mini-visual rocket-visual"></div>
+              <h3>Exploration</h3>
+              <p>Humans have explored it, and future missions aim to return with new science.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="missions" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Human achievement</p>
+            <h2>NASA Missions</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="mission-card">
+              <span class="mission-year">1969</span>
+              <h3>Apollo 11</h3>
+              <p>First humans landed on the Moon, changing the future of space exploration forever.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-year">1990</span>
+              <h3>Hubble Space Telescope</h3>
+              <p>Revealed stunning views of galaxies, nebulae, and deep-space phenomena.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-year">2012</span>
+              <h3>Curiosity Rover</h3>
+              <p>Explored Mars and found evidence that the planet once had watery environments.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-year">2020+</span>
+              <h3>Artemis Program</h3>
+              <p>NASA is preparing the next generation of astronauts to return to the Moon.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="universe" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Beyond our sky</p>
+            <h2>The Universe</h2>
+          </div>
+
+          <div class="universe-grid reveal">
+            <article class="space-spotlight">
+              <div class="spotlight-ring"></div>
+              <h3>Galaxies</h3>
+              <p>Vast collections of stars, gas, dust, and dark matter stretching across space.</p>
+            </article>
+            <article class="space-spotlight">
+              <div class="spotlight-ring ring-two"></div>
+              <h3>Black Holes</h3>
+              <p>Regions where gravity is so strong that even light cannot escape.</p>
+            </article>
+            <article class="space-spotlight">
+              <div class="spotlight-ring ring-three"></div>
+              <h3>Exoplanets</h3>
+              <p>Planets beyond our solar system that may teach us about other worlds.</p>
+            </article>
+          </div>
+
+          <div class="callout reveal">
+            <p>Every discovery reminds us how small, connected, and remarkable our universe truly is.</p>
+            <a class="button primary" href="#top">Back to top</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Space Explorer</p>
+        <p>Made for curious minds.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
